@@ -2,14 +2,15 @@
 
 <br />
 
-![image](https://user-images.githubusercontent.com/109197023/218140169-0939e20d-5c08-4842-87a0-0f946e038fd7.png)
+<img src="./1mincoding-bbc-covid19/images/background.PNG">
 
 <br />
 
 ## 소개
 
-**BBC COVID19 의 스타일을 참고하여 만든 1분코딩의 일상 만화 웹**
-[구경하러 바로 가기]()
+**BBC COVID19 의 스타일을 참고하여 만든 1분코딩의 일상 만화 웹** <br />
+
+[구경하러 바로 가기](https://lustrous-fenglisu-c9897c.netlify.app/)
 
 <br />
 <br />
@@ -18,7 +19,7 @@
 
 <br />
 
-1. margin병합 현상
+1. **margin병합 현상**
 
 <br />
 
@@ -34,7 +35,7 @@
 
 <br />
 
-2. content-box vs border-box
+2. **content-box vs border-box**
 
 - content-box는 기본 CSS 박스 크기 결정법을 사용 (기본 값)
   요소의 너비를 100 픽셀로 설정하면 콘텐츠 영역이 100 픽셀 너비를 가지고, 테두리와 안쪽 여백은 이에 더해짐
@@ -46,7 +47,7 @@
 
 <br />
 
-3. IntersectionObserver
+3. **IntersectionObserver**
 
 언제 사용?
 

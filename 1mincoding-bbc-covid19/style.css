@@ -1,0 +1,86 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box; /*내부 패딩이나 보더가 width, height에 포함*/
+}
+a {
+	color: royalblue;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.global-width{
+	max-width: 620px; /*스마트폰고려*/
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.scroll-graphic{
+	position: sticky;
+	top: 0; 
+	height: 100vh;
+	overflow-x: hidden;
+}
+.graphic-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute; /*쌓임*/
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;  /*이미지넘김*/
+	transition: 0.5s; /*이미지넘김*/
+	will-change: opacity; /*브라우저에 미리 알림 (적당히 쓸 것 너무 많이 쓰면 X)*/
+}
+.visible{
+	opacity: 1; /*이미지넘김*/
+}
+.scene-img{
+	max-height: 100vh; /*창 크기 줄었을 때 이미지도*/
+}
+.scroll-text {
+	position: relative; /*다른요소에 영향을 받지 않기위해 z-index 안쓰고(이미지와 안겹치도록)*/
+	padding-bottom: 1px; 
+	/* .step 요소의 bottom margin이 마진병합 현상때문에 없어져 버려서 부모인 .scroll-text의 높이가 조금 모자라게 되는데, 그걸 방지 */
+}
+.step {
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	background: rgba(255, 255, 255,0.8);
+	margin-bottom: 60vh; /*창사이즈 60정도*/
+	box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.3);
+}
+.bird{
+	position: absolute;
+	left: 0;
+	bottom: 70%;
+	width: 7%;
+	transform: translateX(-100%); /*새 크기의 백퍼센트만큼 왼쪽*/
+	transition: 1.5s 0.5s linear; /*1.5 재생시간 0.5초 지연 linear일정하게*/
+}
+
+[data-index = "5"] .bird{
+	left: 30%;
+	bottom: 30%;
+} 
+
+.global-footer{
+	text-align: center;
+	padding: 20px;
+
+}
+.global-footer a{
+	text-decoration: none;
+	opacity: 0.5;
+	color: black;
+}
+.strikethrough{
+	text-decoration:line-through
+}
